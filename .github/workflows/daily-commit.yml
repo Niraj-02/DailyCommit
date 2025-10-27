@@ -23,7 +23,7 @@ jobs:
 
       - name: Make a dummy commit
         run: |
-          # echo "Run at $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > daily-log.txt
-          # git add daily-log.txt
-          # git commit -m "Daily commit at $(date -u)" || echo "Nothing to commit"
-          # git push origin main
+          echo "Run at $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > daily-log.txt
+          git add daily-log.txt
+          git commit -m "Daily commit at $(date -u)" || echo "Nothing to commit"
+          git push origin main
